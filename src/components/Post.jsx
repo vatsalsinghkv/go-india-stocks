@@ -1,9 +1,7 @@
 import { FaRegHeart } from 'react-icons/fa';
-import { HiUserCircle } from 'react-icons/hi';
 import { BiComment, BiShareAlt } from 'react-icons/bi';
 import { FiEye } from 'react-icons/fi';
-import { Card } from '.';
-import Image from 'next/image';
+import { Card, UserProfile } from '.';
 
 const Post = ({ children }) => {
   return (
@@ -21,16 +19,10 @@ const Post = ({ children }) => {
       </figure>
       {/* User Footer */}
       <figcaption className='flex gap-2'>
-        <div className='w-[50px]'>
-          <Image
-            src='https://source.unsplash.com/random/100x100?user,man,woman,employee'
-            alt='user'
-            width={50}
-            height={50}
-            className='rounded-full'
-          />
+        <div className='w-[50px] flex-grow'>
+          <UserProfile src='https://source.unsplash.com/random/100x100?user,man,woman,employee' />
         </div>
-        <div className='flex-grow p-2 py-1 space-y-2'>
+        <div className='p-2 py-1 space-y-2 md:flex-grow'>
           <h3 className='font-bold'>User 1</h3>
 
           <p>
@@ -41,20 +33,20 @@ const Post = ({ children }) => {
           <footer className='flex justify-between mt-1 text-sm font-semibold'>
             <div className='post-btn'>
               <button>
-                <FaRegHeart className='text-xl' />
+                <FaRegHeart className='md:text-xl' />
               </button>
               2k
             </div>
             <div className='post-btn'>
-              <FiEye className='text-xl' />
+              <FiEye className='md:text-xl' />
               2k
             </div>
             <div className='post-btn'>
-              <BiComment className='text-xl' />
+              <BiComment className='md:text-xl' />
               2k Comments
             </div>
             <div className='post-btn'>
-              <BiShareAlt className='text-xl' />
+              <BiShareAlt className='md:text-xl' />
               Share
             </div>
           </footer>

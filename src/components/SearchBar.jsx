@@ -28,7 +28,7 @@ const SearchBar = ({
 
   return (
     <form
-      className={`p-1 px-3 flex items-center bg-dark-3 rounded shadow-inner shadow-slate-600 ${className}`}
+      className={`p-1 px-3 w-min-[150px] flex items-center bg-dark-3 rounded shadow-inner shadow-slate-600 ${className}`}
       autoComplete='off'
       onSubmit={submitHandler}
       {...props}

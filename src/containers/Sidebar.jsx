@@ -6,14 +6,14 @@ import { HiUser } from 'react-icons/hi';
 import { useState } from 'react';
 
 const Sidebar = ({ className = '' }) => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   return (
     <nav
       className={`${
-        visible ? 'relative' : 'absolute'
-      } w-3/12 h-full bg-accent z-30  transition-all duration-200 ${
-        visible ? 'left-0' : '-left-[25%] text-white'
+        visible ? 'absolute lg:relative' : 'absolute'
+      } lg:w-3/12 h-full bg-accent w-[50%] z-30  transition-all duration-200 ${
+        visible ? 'left-0' : '-left-[50%] lg:-left-[25%] text-white'
       } ${className}`}
     >
       <header className='flex justify-between p-4 py-5 mb-3 text-white border-b border-white/50'>

@@ -1,4 +1,11 @@
-import { Discussion, Featured, MarketStories, Sidebar } from '@/containers';
+import {
+  Discussion,
+  Featured,
+  MarketStories,
+  Navigation,
+  Sidebar,
+  TabList,
+} from '@/containers';
 
 export default function Home() {
   return (
@@ -6,8 +13,10 @@ export default function Home() {
       <Featured />
       <div className='relative inset-0 flex h-full'>
         <Sidebar />
-        <Discussion />
-        <MarketStories />
+        <TabList className='block md:hidden' />
+        <Discussion className='hidden md:block' />
+        <MarketStories className='hidden md:block' />
+        <Navigation className='md:hidden' />
       </div>
     </main>
   );

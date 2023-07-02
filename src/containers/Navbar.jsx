@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button, SearchBar } from '@/components';
+import { Button, SearchBar, UserProfile } from '@/components';
 
 const Navbar = () => {
   return (
@@ -12,8 +12,13 @@ const Navbar = () => {
 
       <SearchBar className='flex-grow' />
 
+      <UserProfile
+        className='w-10 md:hidden'
+        src='https://source.unsplash.com/random/100x100?user,man,woman,employee'
+      />
+
       {/* Buttons */}
-      <div className='flex gap-2'>
+      <div className='hidden gap-2 md:flex '>
         <Button>Contact Us</Button>
         <Button variant='outline' type='link' href='#'>
           SIGN UP

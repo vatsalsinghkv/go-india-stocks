@@ -6,8 +6,8 @@
   :root {
     --color-bg: theme(colors.gray.100);
     --color-bg-secondary: theme(colors.white);
-    --color-accent: theme(colors.sky.950);
-    --color-accent-hover: theme(colors.slate.900);
+    --color-accent: theme(colors.sky.900);
+    --color-accent-hover: theme(colors.slate.950);
     --color-success: theme(colors.green.500);
     --color-danger: theme(colors.red.500);
     --color-text: theme(colors.slate.800);
@@ -24,7 +24,7 @@
 /* Typography */
 
 .heading-primary {
-  @apply text-2xl uppercase text-danger font-semibold my-4;
+  @apply hidden md:block text-2xl uppercase text-danger font-semibold my-4;
 }
 
 /* Social media icons */
