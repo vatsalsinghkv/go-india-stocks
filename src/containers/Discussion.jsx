@@ -7,7 +7,7 @@ const Discussion = ({ className }) => {
     >
       <h1 className='hidden heading-primary md:block'>Discussion fourm</h1>
 
-      <div className='px-0 py-3 space-y-3 md:space-y-4 xl:px-10 '>
+      <div className='px-0 py-3 space-y-2 xs:space-y-3 md:space-y-4 xl:px-10 '>
         <h2 className='hidden mb-2 text-xl font-semibold md:block'>Filters</h2>
         {/* Filter */}
         <Card className='flex flex-wrap-reverse justify-between flex-grow gap-3'>
@@ -29,7 +29,7 @@ const Discussion = ({ className }) => {
         </Card>
 
         {/* Posts */}
-        <div className='h-[calc(100vh-400px)] xs:h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
+        <div className='h-[calc(100vh-450px)] xs:h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
           <Post />
           <Post />
           <Post />
