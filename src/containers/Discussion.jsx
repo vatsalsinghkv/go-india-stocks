@@ -29,7 +29,7 @@ const Discussion = ({ className }) => {
         </Card>
 
         {/* Posts */}
-        <div className='h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
+        <div className='h-[calc(100vh-350px)] xs:h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
           <Post />
           <Post />
           <Post />
@@ -39,5 +39,13 @@ const Discussion = ({ className }) => {
     </section>
   );
 };
+
+const posts = [
+  {
+    id: '1',
+    tag: 'section-1',
+    // time:
+  },
+];
 
 export default Discussion;
