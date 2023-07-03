@@ -8,6 +8,7 @@
     --color-bg-secondary: theme(colors.white);
     --color-accent: theme(colors.sky.900);
     --color-accent-hover: theme(colors.slate.950);
+    --color-danger: theme(colors.red.500);
     --color-text: theme(colors.slate.800);
     --color-dark-1: theme(colors.slate.900);
     --color-dark-2: theme(colors.slate.700);

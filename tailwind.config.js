@@ -16,6 +16,7 @@ module.exports = {
         'bg-secondary': 'var(--color-bg-secondary)',
         accent: 'var(--color-accent)',
         'accent-hover': 'var(--color-accent-hover)',
+        danger: 'var(--color-danger)',
         text: 'var(--color-text)',
         'dark-1': 'var(--color-dark-1)',
         'dark-2': 'var(--color-dark-2)',
