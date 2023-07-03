@@ -7,7 +7,7 @@ const MarketStories = ({ className }) => {
     <section className={`relative flex-grow w-3/12 p-5 ${className}`}>
       <h1 className='hidden heading-primary md:block'>market stories</h1>
 
-      <div className='grid h-[calc(100vh-300px)] xs:h-[calc(100vh-180px)]  md:h-[calc(100vh-300px)] py-8 gap-5 overflow-scroll grid-cols-fluid'>
+      <div className='grid h-[calc(100vh-250px)] xs:h-[calc(100vh-225px)]  md:h-[calc(100vh-300px)] py-8 gap-5 overflow-scroll grid-cols-fluid'>
         {marketStories.map(({ img, text, id, url }) => (
           <Link
             key={id}

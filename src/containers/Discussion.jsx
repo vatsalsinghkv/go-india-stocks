@@ -30,7 +30,7 @@ const Discussion = ({ className }) => {
         </Card>
 
         {/* Posts */}
-        <div className='h-[calc(100vh-450px)] xs:h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
+        <div className='h-[calc(100vh-400px)] xs:h-[calc(100vh-350px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
           {posts.map((post) => (
             <Post key={post.id} {...post} />
           ))}

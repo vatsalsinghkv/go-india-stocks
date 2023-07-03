@@ -1,5 +1,5 @@
 import Discussion from './Discussion';
-import Featured from './Featured';
+import FeaturedCompanies from './FeaturedCompanies';
 import MarketStories from './MarketStories';
 import Navbar from './Navbar';
 import Navigation from './Navigation';
@@ -8,7 +8,7 @@ import TabList from './TabList';
 
 export {
   Discussion,
-  Featured,
+  FeaturedCompanies,
   MarketStories,
   Navbar,
   Sidebar,

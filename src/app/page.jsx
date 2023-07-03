@@ -1,6 +1,6 @@
 import {
   Discussion,
-  Featured,
+  FeaturedCompanies,
   MarketStories,
   Navigation,
   Sidebar,
@@ -10,7 +10,7 @@ import {
 export default function Home() {
   return (
     <main className='h-full '>
-      <Featured />
+      <FeaturedCompanies />
       <div className='relative inset-0 flex h-full'>
         <Sidebar />
         <TabList className='block md:hidden' />
