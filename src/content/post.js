@@ -13,7 +13,7 @@ const posts = [
       caption:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, repellendus!',
     },
-    actions: { likes: 2000, comments: 3500, views: 3000 },
+    actions: { likes: 2000, comments: 1000, views: 3000 },
   },
   {
     id: 'post2',
@@ -29,7 +29,7 @@ const posts = [
       caption:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, repellendus!',
     },
-    actions: { likes: 2000, comments: 3500, views: 3000 },
+    actions: { likes: 2000, comments: 1000, views: 3000 },
   },
   {
     id: 'post3',
@@ -46,7 +46,7 @@ const posts = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, repellendus!',
     },
 
-    actions: { likes: 2000, comments: 3500, views: 5000 },
+    actions: { likes: 2000, comments: 1000, views: 5000 },
   },
 ];
 
