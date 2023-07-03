@@ -4,6 +4,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { FaBell } from 'react-icons/fa';
 import { HiUser } from 'react-icons/hi';
 import { useState } from 'react';
+import navLinks from '@/content/sidebar';
 
 const Sidebar = ({ className = '' }) => {
   const [visible, setVisible] = useState(false);
@@ -25,7 +26,7 @@ const Sidebar = ({ className = '' }) => {
       </header>
 
       <main className='h-full overflow-scroll'>
-        {sections.map((sec, i) =>
+        {navLinks.map((sec, i) =>
           sec.title ? (
             <Dropdown key={sec.title} title={sec.title} links={sec.links} />
           ) : (
@@ -48,27 +49,3 @@ const Sidebar = ({ className = '' }) => {
 };
 
 export default Sidebar;
-
-const sections = [
-  {
-    title: 'Discussion Form',
-    links: [
-      'Ready to Move',
-      'Owner Properties',
-      'Budget Homes',
-      'Newly Launched',
-    ],
-  },
-  {
-    title: 'Market Sales',
-    links: [
-      'Flats in Ahmedabad',
-      'House for sale in Ahmedabad',
-      'Villa in Ahmedabad',
-    ],
-  },
-  'Propworth',
-  'Rates & Trends',
-  'Buy vs Rent',
-  'Tips and Guides',
-];

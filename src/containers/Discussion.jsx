@@ -1,4 +1,5 @@
 import { Card, Post, SearchBar } from '@/components';
+import posts from '@/content/post';
 
 const Discussion = ({ className }) => {
   return (
@@ -30,22 +31,13 @@ const Discussion = ({ className }) => {
 
         {/* Posts */}
         <div className='h-[calc(100vh-450px)] xs:h-[calc(100vh-300px)] md:h-[calc(100vh-450px)] py-5 space-y-5 overflow-y-scroll'>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          {posts.map((post) => (
+            <Post key={post.id} {...post} />
+          ))}
         </div>
       </div>
     </section>
   );
 };
-
-const posts = [
-  {
-    id: '1',
-    tag: 'section-1',
-    // time:
-  },
-];
 
 export default Discussion;
